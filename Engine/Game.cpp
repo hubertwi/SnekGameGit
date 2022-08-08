@@ -30,7 +30,7 @@ Game::Game(MainWindow& wnd)
 	rng(std::random_device()()),
 	snek({ 2,2 }),
 	goal(rng, brd, snek)
-{
+{	//Epic Change here
 	for (int i = 0; i < nObstacles; i++)
 	{
 		obstacles[i].SpawnObstacle(rng, brd, snek, goal);
